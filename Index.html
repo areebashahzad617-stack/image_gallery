@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha - Task 1: Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CodeAlpha Image Gallery</h1>
+        <p>Task 1: Responsive Gallery with Lightbox and Expanded Categories</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <!-- Nature Items -->
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Mountain Forest">
+            <div class="image-info">
+                <h3>Mountain Forest</h3>
+                <span>Nature</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Tropical Beach">
+            <div class="image-info">
+                <h3>Tropical Beach</h3>
+                <span>Nature</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=600&q=80" alt="Misty Woods">
+            <div class="image-info">
+                <h3>Misty Woods</h3>
+                <span>Nature</span>
+            </div>
+        </div>
+
+        <!-- Architecture Items -->
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Modern Skyline">
+            <div class="image-info">
+                <h3>Modern Skyline</h3>
+                <span>Architecture</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Minimalist Room">
+            <div class="image-info">
+                <h3>Minimalist Room</h3>
+                <span>Architecture</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Classic Bridge">
+            <div class="image-info">
+                <h3>Classic Bridge</h3>
+                <span>Architecture</span>
+            </div>
+        </div>
+
+        <!-- Technology Items -->
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Circuit Board">
+            <div class="image-info">
+                <h3>Circuit Board</h3>
+                <span>Technology</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Code Development">
+            <div class="image-info">
+                <h3>Code Development</h3>
+                <span>Technology</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Workspace Setup">
+            <div class="image-info">
+                <h3>Workspace Setup</h3>
+                <span>Technology</span>
+            </div>
+        </div>
+
+        <!-- Food Items -->
+        <div class="gallery-item" data-category="food">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Delicious Feast">
+            <div class="image-info">
+                <h3>Delicious Feast</h3>
+                <span>Food</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="food">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Fresh Pizza">
+            <div class="image-info">
+                <h3>Fresh Pizza</h3>
+                <span>Food</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="food">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Healthy Salad">
+            <div class="image-info">
+                <h3>Healthy Salad</h3>
+                <span>Food</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeLightbox">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
